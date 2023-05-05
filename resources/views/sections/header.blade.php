@@ -1,6 +1,7 @@
-<header class="banner">
-  <a class="brand" href="{{ home_url('/') }}">
-    {!! $siteName !!}
+<header class="banner flex p-4">
+  <a class="brand w-[100px]" href="{{ home_url('/') }}">
+    {{--{!! $siteName !!}--}}
+    <img class="logo" src="/wp-content/themes/devhouse-sage-starter/resources/images/DHlogo-black.png" alt="DevHouse logo"/>
   </a>
 
   @if (has_nav_menu('primary_navigation'))
