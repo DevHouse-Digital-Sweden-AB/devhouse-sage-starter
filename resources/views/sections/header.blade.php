@@ -7,9 +7,9 @@
     </a>
   
     @if (has_nav_menu('primary_navigation'))
-      <button class="block md:hidden" type="button" aria-haspopup="true" id="hamburger-button">MENU</button>
+      <button class="block md:hidden" type="button" aria-label="Open" aria-haspopup="menu" id="hamburger-button">MENU</button>
     
-      <nav class="nav-primary hidden md:block" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
+      <nav id="primary-navigation" class="nav-primary hidden md:block" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav flex justify-between h-full', 'echo' => false]) !!}
       </nav>
     @endif
